@@ -71,3 +71,147 @@ body {
   background-color: #0056b3;
 }
 
+/* Global Typography */
+body {
+  font-family: 'Roboto', sans-serif;  /* Firebase's standard font */
+  font-size: 16px;                   /* Standard font size for readability */
+  line-height: 1.5;                  /* Improve line spacing */
+  color: #333;                       /* Dark text for readability */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;                  /* Consistent weight for all headings */
+  color: #222;                       /* Darker color for headings */
+}
+
+/* Heading Sizes */
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1.125rem; }
+
+/* Links and Buttons */
+a, .mdl-button {
+  color: #1a73e8;  /* Firebase blue for clickable elements */
+  text-decoration: none;
+}
+
+a:hover, .mdl-button:hover {
+  color: #0c56b8;  /* Darker blue on hover */
+}
+
+/* Color Variables */
+:root {
+  --primary-color: #1a73e8;   /* Firebase blue */
+  --secondary-color: #0c56b8; /* Darker blue for hover states */
+  --background-color: #fff;   /* White background */
+  --text-color: #333;         /* Dark text for readability */
+  --heading-color: #222;      /* Darker color for headings */
+}
+
+/* Global Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Global Padding and Margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px; /* Outer margin for the body */
+  padding: 0;
+}
+
+section {
+  margin-bottom: 20px;  /* Space between sections */
+  padding: 15px;
+  border: 1px solid #e0e0e0; /* Light border to separate sections */
+  border-radius: 8px;   /* Rounded corners for sections */
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 15px;  /* Space below headings */
+}
+
+p {
+  margin-bottom: 15px;  /* Space between paragraphs */
+}
+
+/* Button and Interactive Element Styling */
+.mdl-button, button {
+  margin: 10px 0;  /* Margin for buttons */
+  padding: 10px 20px;  /* Padding inside buttons */
+  border-radius: 5px;  /* Rounded corners for buttons */
+  cursor: pointer;
+}
+
+.mdl-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.mdl-button:hover {
+  background-color: var(--secondary-color);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust font sizes for smaller screens */
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  /* Stack sections vertically on smaller screens */
+  section {
+    padding: 10px;
+  }
+
+  /* Ensure buttons are large enough for mobile interaction */
+  .mdl-button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .mdl-button {
+    width: 100%;  /* Make buttons take up the full width */
+  }
+}
+
+
