@@ -56,6 +56,18 @@ firebaseui.auth.ui.mdl.MDL_COMPONENT_CLASSES_ = [
 
 
 /**
+ * Scrolls the page to the bottom with smooth behavior.
+ */
+firebaseui.auth.ui.mdl.scrollToBottom = function() {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+  });
+};
+
+
+
+/**
  * Performs an operation on all MDL elements within a given element (e.g.
  * upgradeElement, downgradeElements), including the element itself.
  * @param {?Element} element
